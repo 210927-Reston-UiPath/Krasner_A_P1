@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--The head element holds meta data aka data about the webpage itself  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Supply Store</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+      <img style="max-width:100px; margin-top: -7px;"
+           src="../img/fox.png">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li><a href="../pages/Login.html" class="nav-link">The Frisky Fox-Pet Supplies</a></li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../pages/Home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/Products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/Orders.html">Orders</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <div class="float-container-mediumdog">
+
+    <div class="float-child">
+      <div class="green">The Medium subscription!</div>
+      <p>A collection of all the necessities a Medium Dog needs.</p>
+      <p>Dog Food, Dog Bowl, Leashes, Chew Toys, Nutrional supplements.</p>
+      <p>Everything your medium pup Needs on a monthly delivery</p>
+    </div>
+    <div class="float-child">
+      <div class="blue">
+        <img style="max-width:385px; z-index:999; margin-top: -7px;"
+        src="../img/small.png">
+      </div>
+    </div>
+    <div class="float-child-left-bottom">
+     <!-- //TEST -->
+     <!--Data that you'll be presenting-->
+<div class="container">
+  <div class="row">
+      <div class="col-9">
+          <table class="table">
+              <thead>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Description</th>
+                  <th>Quantity</th>
+              </thead>
+              <tbody>
+                  <tr id="Package">
+                      <td>Small & Mighty!</td>
+                      <td class="price">$180.00</td>
+                      <td>Monthly</td>
+                      <td><input type="number" name="" id="" class="form-control quantity"></td>
+                      <td><input type="button" value="Buy" class="btn btn-info" onclick="buy('Package')"></td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
+<!-- //TEST -->
+
+
+
+    </div>
+    <div class="float-child-right-bottom">
+      <!-- <img style="max-width:200px; float:right; margin-top: 120px;"
+      src="../img/eco.png"> -->
+      <div class="col">
+        <h5>Cart</h5>
+        <table class="table" id="cart">
+            <thead>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button class="btn btn-secondary" onclick="checkout()">Checkout</button>
+    </div>
+    </div>
+  </div>
+  <script src="../Index.js"></script>
+    </div>
+  </div>
+</body>
+</html>
